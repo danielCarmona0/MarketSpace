@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROPA</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="logo.png" alt="">
+            <h1>Market place</h1>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="carro.png" alt="">
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">   
+                </div>
+                <h2>Total:  <strong class="price-total">0</strong>$ </h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <p class="title">Tomie Out of body T-shirt</p>
+                    <img class="pro" src="img/Tomie Out of body T-shirt.png" alt="">
+                    <p><span>50.000</span>$</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <p class="title">ROKUMEIKAN PRINT COLLAR STRINGS BLOUSE</p>
+                    <img class="pro" src="img/Release] ROKUMEIKAN PRINT COLLAR STRINGS BLOUSE.png" alt="">
+                    <p><span>100.000</span>$</p>
+                <a href="" data-id="2" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <p class="title">Hedy Mint Satin Corset Dress</p>
+                    <img class="pro" src="img/Hedy Mint Satin Corset Dress.png" alt="">
+                    <p><span>80.000</span>$</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <p class="title">BUZO GRANDE ESTILO AMERICANO BUSO SUDADERA</p>
+                    <img class="pro" src="img/BUZO GRANDE ESTILO AMERICANO BUSO SUDADERA.png" alt="">
+                    <p><span>80.000</span>$</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <p class="title">Wool Beaver Saruel Rib Pants</p>
+                    <img class="pro" src="img/Wool Beaver Saruel Rib Pants.png" alt="">
+                    <p><span>200.000</span>$</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="app.js" ></script>
+</body>
+</html>

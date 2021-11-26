@@ -1,0 +1,133 @@
+body{
+    font-family: system-ui;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(224, 221, 221);
+}
+header{
+    background-color: rgb(175, 169, 169);
+    padding-top: 20px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px 3px black;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
+}
+
+.title{
+    font-family: arial;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+
+.logo{
+    width: 100px;
+}
+
+.cart{
+    width: 55px;
+    transition:all .5s ease;
+    overflow:hidden;
+}
+
+.cart:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: rgb(184, 172, 172);
+    border: solid 1px black;
+}
+
+.products{
+    padding-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts{
+    background-color: rgb(175, 169, 169);
+    max-width: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+.carts .pro{
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    text-decoration: none;
+    background: white;
+    padding: 9px 23px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.carts a:hover{
+    background: black;
+    color: white;
+    border: solid 2px white;
+    transition-duration: .3s;
+}
+
+.cart-products .item img{
+    width: 115px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+   
+}
+.cart-products .item span{
+    background-color: rgb(143, 20, 137);
+    padding: 0px 5px;
+    border-radius: 60%;
+    color: #fff;
+}
